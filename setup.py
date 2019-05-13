@@ -45,7 +45,7 @@ def get_long_desc() -> str:
 
 setup(
     name=ptr_params["entry_point_module"],
-    version="19.5.3",
+    version="19.5.13",
     description="Parallel asyncio Python setup.(cfg|py) Test Runner",
     long_description=get_long_desc(),
     long_description_content_type="text/markdown",
@@ -59,10 +59,11 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3 :: Only",
+        "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
     ],
-    python_requires=">=3.6",
+    python_requires=">=3.5",
     install_requires=None,
     entry_points={"console_scripts": ["ptr = ptr:main"]},
     test_suite=ptr_params["test_suite"],
